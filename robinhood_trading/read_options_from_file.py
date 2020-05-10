@@ -12,8 +12,8 @@ This program allows the user to query and store real-time options bid/ask
 price data from the Robinhood API. 
 '''
 def log_in():
-    # NOTE: need to update this line to point to log-in info
-    path_to_config = "/Users/levente/Desktop/Robinhood/config.json"
+    # NOTE: need to update this line to point to your Robinhood log-in info
+    path_to_config = ""
     content = open(path_to_config).read()
     config = json.loads(content)
     rh.login(config['username'], config['password'])
